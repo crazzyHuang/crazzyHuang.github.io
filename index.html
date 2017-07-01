@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-SE框架说明" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/01/SE框架说明/" class="article-date">
+  <time datetime="2017-07-01T14:17:12.000Z" itemprop="datePublished">2017-07-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/01/SE框架说明/">SE框架说明</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="SE前端框架文档说明"><a href="#SE前端框架文档说明" class="headerlink" title="SE前端框架文档说明"></a>SE前端框架文档说明</h1><h2 id="手机app框架文档请查看-H5-README"><a href="#手机app框架文档请查看-H5-README" class="headerlink" title="手机app框架文档请查看 H5_README"></a>手机app框架文档请查看 <a href="http://sunui.scn.weilian.cn:12809/se/demo/build/h5_readme.html" target="_blank" rel="external">H5_README</a></h2><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><p>在开发环境中请在host 文件添加如下 域名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">10.0.0.108 sunui.scn.weilian.cn</div></pre></td></tr></table></figure>
+<p>目前已将界面框架整体布局写好. 该文档中的文件路径基于以下demo 项目</p>
+<p>demo文件请下载 <a href="http://sunui.scn.weilian.cn:12809/se/demo/build/component_pages.zip" target="_blank" rel="external">demo file</a> </p>
+<p>在线演示 请查看 <a href="http://sunui.scn.weilian.cn:12809/se/demo/min_suneeeERP.html" target="_blank" rel="external">SE live demo</a></p>
+<p>其他业务只需要写在<strong>component_page 文件夹</strong>里面<br>例如 需要新加一个 <strong>人员管理</strong> 的业务,新建一个<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">userManager.html</div></pre></td></tr></table></figure></p>
+<p>到<strong>component_page 文件夹</strong>  下</p>
+<p>代码结构为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot; userManager&quot;&gt;</div><div class="line">&lt;!--你的html的代码 --&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script&gt;</div><div class="line">$(function()&#123;</div><div class="line">    // 你的js代码</div><div class="line">&#125;);</div><div class="line"></div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注意: 在开发的时候,你要新建的业务相关的文件请放到你的项目路径的component_page 文件夹下.不是这里demo的文件夹!</p>
+</blockquote>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>在系统首页加载时,页面会首先请求该系统的路由配置和左侧菜单的配置.</p>
+<p>左侧菜单接口已由<br><strong>@修己</strong><br>实现,开发的同事无需关注如何实现以及前端代码组装.如需新添加业务页面,请联系<br><strong>@修己</strong><br>叫他帮加,或者询问如何添加.</p>
+<h2 id="URL路由"><a href="#URL路由" class="headerlink" title="URL路由"></a>URL路由</h2><p>该路由配置也跟左侧菜单一样在系统页面初始化的时候已向服务端请求.</p>
+<p>数据结构如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    mainHost:&#123;</div><div class="line">        port:8889,</div><div class="line">        addr:&quot;http://192.168.1.102/&quot;,</div><div class="line">        url:&#123;</div><div class="line">            getUsers:&quot;/getUsers&quot;,</div><div class="line">            addUsers:&quot;/addUsers&quot;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    subHost:&#123;</div><div class="line">        port:8881,</div><div class="line">        addr:&quot;http://192.168.1.103/&quot;,</div><div class="line">        url:&#123;</div><div class="line">            getGoods:&quot;/getGoods&quot;</div><div class="line">            ...</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    ...</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p>当需要请求服务器时,为了方便维护,建议不直接在代码中写死url,改用以下方法,如一个ajax 请求</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">var myRouter = SEconfig.mainHost;</div><div class="line">var baseurl = myRouter.addr + myRouter.port;</div><div class="line">var urls = myRouter.url;</div><div class="line">var getUserUrl = baseurl + urls.getUsers;</div><div class="line"></div><div class="line">$.ajax(&#123;</div><div class="line">    type:&quot;GET&quot;,</div><div class="line">    url:getUserUrl, // 拼接好的url,</div><div class="line">    data:&#123;&#125; // 该接口所需传的参数 ,没有就不写</div><div class="line">    success:function(res)&#123;</div><div class="line">        </div><div class="line">    &#125;,</div><div class="line">    error:function()&#123;</div><div class="line">        </div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注意,url 的接口名字 已在服务端的接口说明文档中给出,这里就不一一说明了.</p>
+</blockquote>
+<h2 id="目前前端框架提供的组件有以下几个"><a href="#目前前端框架提供的组件有以下几个" class="headerlink" title="目前前端框架提供的组件有以下几个"></a>目前前端框架提供的组件有以下几个</h2><ul>
+<li>表格</li>
+<li>弹窗</li>
+<li>下拉框</li>
+<li>form 表单验证</li>
+<li>树</li>
+<li>…</li>
+</ul>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>表格内部具体实现逻辑已经封装好,只需要写一些需要的配置即可</p>
+<p>使用示例(具体请参考 <em>user_manage.html</em> )</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div></pre></td><td class="code"><pre><div class="line">        //表格的属性对象，用于初始化表格的设置</div><div class="line">        var option = &#123;</div><div class="line">            plusBtn:[&#123; // 自定义toolbar 上的按钮</div><div class="line">                id:&quot;testBtn&quot;,</div><div class="line">                text:&quot;测试&quot;,</div><div class="line">                clazz:&quot;btn btn-default&quot;,</div><div class="line">                iconClass:&quot;fa fa-grav&quot;</div><div class="line">            &#125;],</div><div class="line">            height: &quot;200px&quot;,</div><div class="line">            // &quot;新增窗口&quot;的配置</div><div class="line">            add: &#123;</div><div class="line">                title: &quot;自定义我的标题&quot;,</div><div class="line">                id: &quot;addUserDlg&quot;,</div><div class="line">                height: &quot;300px&quot;,</div><div class="line">                width: &quot;500px&quot;,</div><div class="line">                templId: &quot;addUserTempl&quot;,</div><div class="line">                url: &quot;http://192.168.5.202:8081/test&quot;,//新增的地址</div><div class="line">                openCallback: function () &#123; // 窗口打开完成的回调</div><div class="line">//                    $(&apos;#addUserDlg .input-datepicker, .input-daterange&apos;).datepicker(&#123;</div><div class="line">//                        weekStart: 1,</div><div class="line">//                        language: &quot;zh-CN&quot;</div><div class="line">//                    &#125;);</div><div class="line"></div><div class="line">                    $(&apos;#example-timepicker2&apos;).timepicker(&#123;</div><div class="line">                        showSeconds: true</div><div class="line">                    &#125;);</div><div class="line"></div><div class="line">                &#125;,</div><div class="line">                validated: &#123;</div><div class="line">                    rules: &#123;</div><div class="line">                        username: &quot;required&quot;,</div><div class="line">                        gender: &quot;required&quot;,</div><div class="line">                        addr: &quot;required&quot;,</div><div class="line">                        homeAddr: &quot;required&quot;,</div><div class="line">                        gra_school: &quot;required&quot;,</div><div class="line">                        live_city: &quot;required&quot;,</div><div class="line">                        phone: &#123;</div><div class="line">                            required: true,</div><div class="line">                            minlength: 11</div><div class="line">                        &#125;,</div><div class="line">                        ps_statmt: &#123;</div><div class="line">                            required: true,</div><div class="line">                            minlength: 10</div><div class="line">                        &#125;</div><div class="line">                    &#125;,</div><div class="line">                    messages: &#123;</div><div class="line">                        username: &quot;请输入用户名&quot;,</div><div class="line">                        gender: &quot;请输入性别&quot;,</div><div class="line">                        addr: &quot;请输入地址&quot;,</div><div class="line">                        homeAddr: &quot;请输入家庭地址&quot;,</div><div class="line">                        gra_school: &quot;请输入毕业院校&quot;,</div><div class="line">                        live_city: &quot;请输入您所在城市&quot;,</div><div class="line">                        phone: &#123;</div><div class="line">                            required: &quot;请输入手机号码&quot;,</div><div class="line">                            minlength: &quot;手机号码长度至少为11&quot;</div><div class="line">                        &#125;,</div><div class="line">                        ps_statmt: &#123;</div><div class="line">                            required: &quot;请输入个人宣言&quot;,</div><div class="line">                            minlength: &quot;个人宣言长度至少为10&quot;</div><div class="line">                        &#125;</div><div class="line">                    &#125;,</div><div class="line"></div><div class="line">                &#125;</div><div class="line">            &#125;,</div><div class="line">            detail: &#123; // 详情的配置</div><div class="line">                onclick: function (index, row) &#123;</div><div class="line">                    showDetail(row);</div><div class="line">                &#125;</div><div class="line">            &#125;,</div><div class="line">            edit: &#123;</div><div class="line">                onclick: function (index, row) &#123;</div><div class="line">                    console.info(index, row);</div><div class="line">                &#125;</div><div class="line">            &#125;,</div><div class="line">            del: &#123;</div><div class="line">                onclick: function (index, row) &#123;</div><div class="line">                    alert(&quot;点击了第&quot; + index + &quot;行 == 删除&quot;);</div><div class="line">                &#125;</div><div class="line">            &#125;,</div><div class="line">            batchAdd: function (rows) &#123;</div><div class="line">                console.info(&quot;batchAdd&quot;);</div><div class="line">                console.info(rows);</div><div class="line">            &#125;,</div><div class="line">            batchEdit: function (rows) &#123;</div><div class="line">                console.info(&quot;batchEdit&quot;);</div><div class="line">                console.info(rows);</div><div class="line">            &#125;,</div><div class="line">            batchDel: function (rows) &#123;</div><div class="line">                console.info(&quot;batchDel&quot;);</div><div class="line">                console.info(rows);</div><div class="line">            &#125;,</div><div class="line">            seniorSearch: &#123; // 高级搜索配置</div><div class="line">                formList: [&#123;</div><div class="line">                    filed: &quot;部门名称：&quot;,</div><div class="line">                    name: &quot;dept&quot;</div><div class="line">                &#125;, &#123;</div><div class="line">                    filed: &quot;部门编号：&quot;,</div><div class="line">                    name: &quot;code&quot;</div><div class="line">                &#125;],</div><div class="line">                plusFiled: template(&apos;customSearchTemp&apos;,&#123;&#125;)</div><div class="line">            &#125;,</div><div class="line">            search: true,</div><div class="line">            tools: true,</div><div class="line">            url: &quot;http://sunui.scn.weilian.cn:12809/se/demo/build/users.json&quot;,  // 表格获取数据的接口</div><div class="line">            // 表格的头部，有多少列，就写多少</div><div class="line">            columns: [&#123;</div><div class="line">                filed: &quot;账号&quot;,</div><div class="line">                name: &quot;account&quot;</div><div class="line">            &#125;, &#123;</div><div class="line">                filed: &quot;用户ID&quot;,</div><div class="line">                name: &quot;userId&quot;</div><div class="line">            &#125;, &#123;</div><div class="line">                filed: &quot;员工ID&quot;,</div><div class="line">                name: &quot;employeeId&quot;</div><div class="line">            &#125;, &#123;</div><div class="line">                filed: &quot;名称&quot;,</div><div class="line">                name: &quot;userName&quot;</div><div class="line">            &#125;, &#123;</div><div class="line">                filed: &quot;地址&quot;,</div><div class="line">                name: &quot;address&quot;</div><div class="line">            &#125;, &#123;</div><div class="line">                filed: &quot;状态&quot;,</div><div class="line">                name: &quot;valid&quot;</div><div class="line">            &#125;, &#123;</div><div class="line">                filed: &quot;备注&quot;,</div><div class="line">                name: &quot;memo&quot;</div><div class="line">            &#125;],</div><div class="line">            columnDefs: [&#123; // 渲染列 格式化</div><div class="line">                render: function (data, type, row) &#123;  // 格式化 列</div><div class="line">                    return new Date(data).Format(&quot;yyyy-MM-dd&quot;);</div><div class="line">                &#125;,</div><div class="line">                targets: [1] // 第几列</div><div class="line">            &#125;, &#123;</div><div class="line">                render: function (data, type, row) &#123;  // 格式化 列</div><div class="line">                    return &quot;hello world&quot;</div><div class="line">                &#125;,</div><div class="line">                targets: [3, 4] // 第几列</div><div class="line">            &#125;],</div><div class="line">            onInit: function () &#123;  //表格初始化完成</div><div class="line">              </div><div class="line">              // 自定义按钮的响应事件</div><div class="line">                $(&quot;#testBtn&quot;).on(&quot;click&quot;,function () &#123;</div><div class="line">                    alert(1);</div><div class="line">                &#125;);</div><div class="line">            &#125;</div><div class="line">        &#125;;</div><div class="line">    // 实例化表格, &quot;user-manage-table&quot; 为所需展示表格的Id</div><div class="line">    var table = suneeeUI.seTable(&quot;user-manage-table&quot;, option);</div></pre></td></tr></table></figure>
+<h4 id="配置选项参数如下-时间问题待完善-如有不懂或者需要添加的功能可以先问问-成至"><a href="#配置选项参数如下-时间问题待完善-如有不懂或者需要添加的功能可以先问问-成至" class="headerlink" title="配置选项参数如下 (时间问题待完善,如有不懂或者需要添加的功能可以先问问@成至 ),"></a>配置选项参数如下 (时间问题待完善,如有不懂或者需要添加的功能可以先问问@成至 ),</h4><table>
+<thead>
+<tr>
+<th>option</th>
+<th>描述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>columns</td>
+<td>表头</td>
+<td>*必须 </td>
+</tr>
+<tr>
+<td>url</td>
+<td>该表格服务端的url地址</td>
+<td>*必须 </td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>… </td>
+</tr>
+</tbody>
+</table>
+<h4 id="传给服务端的参数有"><a href="#传给服务端的参数有" class="headerlink" title="传给服务端的参数有"></a>传给服务端的参数有</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;start&quot;:0  // 从第几条记录开始 </div><div class="line">    &quot;length&quot;:10  // 每页的长度 可以是 10 20 等自定义的数</div><div class="line">    &quot;pageNum&quot;:1 // 第几页  1 为第一页  从 1开始数 </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="弹窗-具体请参靠-component-pages-文件夹下的-layerDemo-html"><a href="#弹窗-具体请参靠-component-pages-文件夹下的-layerDemo-html" class="headerlink" title="弹窗 (具体请参靠 component_pages 文件夹下的 layerDemo.html)"></a>弹窗 (具体请参靠 component_pages 文件夹下的 layerDemo.html)</h3><ul>
+<li>layer.open()  // 弹出一个窗口  内容自定义 </li>
+<li>layer.alert() // 警告框</li>
+<li>layer.msg() // 提示框</li>
+<li>layer.confirm() // 确认框</li>
+</ul>
+<h3 id="下拉框-具体请参靠-component-pages-文件夹下的-selectDemo-html"><a href="#下拉框-具体请参靠-component-pages-文件夹下的-selectDemo-html" class="headerlink" title="下拉框 (具体请参靠 component_pages 文件夹下的 selectDemo.html)"></a>下拉框 (具体请参靠 component_pages 文件夹下的 selectDemo.html)</h3><p>(略)</p>
+<h3 id="form-表单验证-具体请参靠-component-pages-文件夹下的-selectDemo-html"><a href="#form-表单验证-具体请参靠-component-pages-文件夹下的-selectDemo-html" class="headerlink" title="form 表单验证 (具体请参靠 component_pages 文件夹下的 selectDemo.html)"></a>form 表单验证 (具体请参靠 component_pages 文件夹下的 selectDemo.html)</h3><p>form 表单验证 使用了第三方插件 <a href="https://jqueryvalidation.org/" target="_blank" rel="external">jQuery Validate</a>  具体的使用例子 已在demo中给出.如有疑问可查看<a href="https://jqueryvalidation.org/" target="_blank" rel="external">官网</a> 也可以向 @成至 提出疑问和交流.</p>
+<h3 id="树-具体请参靠-component-pages-文件夹下的-treeDemo-html"><a href="#树-具体请参靠-component-pages-文件夹下的-treeDemo-html" class="headerlink" title="树 (具体请参靠 component_pages 文件夹下的 treeDemo.html)"></a>树 (具体请参靠 component_pages 文件夹下的 treeDemo.html)</h3><p>树组件使用了第三方的组件 <a href="http://www.treejs.cn/v3/main.php#_zTreeInfo" target="_blank" rel="external">ztree</a> 在本demo 中只是演示官网简单的例子. 如有复杂的要求,可以查看官网,或者向 @成至 提问和交流.</p>
+<h3 id="其他组件"><a href="#其他组件" class="headerlink" title="其他组件"></a>其他组件</h3><p>目前前端框架还在开发整合当中,如在实际开发中遇到什么困难,或者有什么新的需求需要添加新的组件.请及时向框架小组提出,以便及时响应.</p>
+<blockquote>
+<p>谢谢</p>
+</blockquote>
+<hr>
+<h4 id="2017年6月22日修改"><a href="#2017年6月22日修改" class="headerlink" title="2017年6月22日修改"></a>2017年6月22日修改</h4><ul>
+<li>表格选项”添加” 新增 openCallback 回调. </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">add: &#123;</div><div class="line">       id: &quot;addUserDlg&quot;,</div><div class="line">       height: &quot;600px&quot;,</div><div class="line">       width: &quot;1000px&quot;,</div><div class="line">       templId: &quot;addUserTempl&quot;,</div><div class="line">       url: &quot;http://192.168.5.202:8081/test&quot;,//新增的地址</div><div class="line">       openCallback:function () &#123;</div><div class="line">           // 窗口打开完后的回调函数</div><div class="line">       &#125;</div><div class="line">       ...</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>表格添加弹窗的按钮隐藏</li>
+</ul>
+<p>有时候,使用者想对添加表格内的内容自定义,不需要框架提供的事件则可以选择把底部的”确定” “取消” 按钮隐藏 只要在add的配置代码里面写上 btn:false 即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">add: &#123;</div><div class="line">   ...</div><div class="line">   btn:false,</div><div class="line">   ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>表格列 格式化</li>
+</ul>
+<p>在表格的配置代码中,加入 columnDefs 配置 如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">var options = &#123;</div><div class="line">    ...</div><div class="line">    // 列格式化</div><div class="line">    columnDefs: [&#123;</div><div class="line">                render: function (data, type, row) &#123;  // 格式化 列</div><div class="line">                    // 该列的原始数据是毫秒数</div><div class="line">                    // 转成时间格式再渲染</div><div class="line">                    return new Date(data).Format(&quot;yyyy-MM-dd&quot;);</div><div class="line">                &#125;,</div><div class="line">                targets: 1 // 第几列</div><div class="line">            &#125;, &#123;</div><div class="line">                render: function (data, type, row) &#123;  // 格式化 列</div><div class="line">                    return &quot;hello world&quot;</div><div class="line">                &#125;,</div><div class="line">                targets: [3, 4] //  可为多列 也可以单列</div><div class="line">            &#125;,</div><div class="line">             &#123;</div><div class="line">                    &quot;targets&quot;: [ 3 ], // 第几行</div><div class="line">                    &quot;visible&quot;: false  // 隐藏该列</div><div class="line">                &#125;</div><div class="line">            </div><div class="line">            ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>表格的编辑 详情 删除</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">var options = &#123;</div><div class="line">    ...</div><div class="line">    detail: &#123; // 详情的配置</div><div class="line">         onclick:function (index,row) &#123;</div><div class="line">             // index  第几行</div><div class="line">             // row  该行的数据</div><div class="line">             alert(1);</div><div class="line">         &#125;</div><div class="line">    &#125;,</div><div class="line">    edit:&#123; // 编辑的响应事件</div><div class="line">        onclick:function (index,row) &#123;</div><div class="line">            console.info(index,row);</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    del:&#123; // 编辑的响应事件</div><div class="line">        onclick:function () &#123;</div><div class="line">            </div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>新增时间格式化方法</li>
+</ul>
+<p>使用方法如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var time1 = 1498092974592;</div><div class="line">new Date(time1).Format(&quot;yyyy-MM-dd&quot;);</div></pre></td></tr></table></figure>
+<h4 id="2017年6月23日-更新"><a href="#2017年6月23日-更新" class="headerlink" title="2017年6月23日 更新"></a>2017年6月23日 更新</h4><ul>
+<li>表格批量按钮的响应事件<br>如需要在表格工具栏使用批量的事件 在表格的配置选项中,加入如下代码</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">options = &#123;</div><div class="line">    ...</div><div class="line">     batchAdd:function (rows) &#123; // 批量添加按钮</div><div class="line">            console.info(&quot;batchAdd&quot;);</div><div class="line">            console.info(rows);</div><div class="line">            </div><div class="line">            //rows 的格式为</div><div class="line">            // [&#123;</div><div class="line">            //    index:1 // 选中的行索引</div><div class="line">            //    data:&#123;&#125; // 选中行的数据</div><div class="line">            // &#125;,&#123;</div><div class="line">            //      index:2 // 选中的行索引</div><div class="line">            //     data:&#123;&#125; // 选中行的数据</div><div class="line">            // &#125;]</div><div class="line">            </div><div class="line">    &#125;,</div><div class="line">    batchEdit:function (rows) &#123; // 批量编辑</div><div class="line">        console.info(&quot;batchEdit&quot;);</div><div class="line">        console.info(rows);</div><div class="line">    &#125;,</div><div class="line">    batchDel:function (rows) &#123; // 批量编辑</div><div class="line">        console.info(&quot;batchDel&quot;);</div><div class="line">        console.info(rows);</div><div class="line">    &#125;,</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>具体的业务实现表格不参与,只是单纯响应鼠标点击响应的事件,以及返回所勾选的行.如不需要以上的功能,可以按需要添加或不加即可.</p>
+</blockquote>
+<ul>
+<li>详情弹窗 数据绑定(参考,可选)</li>
+</ul>
+<p>当想查看某行的详情时,可以在详情的响应事件中加入弹窗的内容,里面的内容不需要在手动一个一个设置,在模板内容的html里面写好就行.<br>例子如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div></pre></td><td class="code"><pre><div class="line">&lt;script id=&quot;detailTemp&quot; type=&quot;text/html&quot;&gt;</div><div class="line"></div><div class="line">    &lt;!--绑定name字段--&gt;</div><div class="line">    &lt;div&gt; &#123;&#123;name&#125;&#125; &lt;/div&gt; </div><div class="line">    &lt;!--将字段 enterprisecode  的值 绑定到 input 的value 中--&gt;</div><div class="line">    &lt;input type=&quot;text&quot; value=&quot;&#123;&#123; enterprisecode &#125;&#125;&quot;&gt;</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line"></div><div class="line">$(function()&#123;</div><div class="line"></div><div class="line">        var options = &#123;</div><div class="line">            ...</div><div class="line">            </div><div class="line">             detail: &#123; // 详情的配置</div><div class="line">                 onclick:function (index,row) &#123;</div><div class="line">                      showDetail(row);</div><div class="line">                 &#125;</div><div class="line">            &#125;,</div><div class="line">            </div><div class="line">            ...</div><div class="line">            </div><div class="line">        &#125;</div><div class="line"></div><div class="line">        function showDetail(row)&#123;</div><div class="line">            </div><div class="line">            //row 的值为</div><div class="line">            // &#123;</div><div class="line">            //   ...</div><div class="line">            //   name:&quot;xxxx&quot;, </div><div class="line">            //   enterprisecode:&quot;xxxxxx&quot;</div><div class="line">            //   ...</div><div class="line">            // &#125;</div><div class="line"></div><div class="line">        </div><div class="line">            var detailTempl = template(&quot;detailTemp&quot;, row);</div><div class="line">            var index = layer.open(&#123;</div><div class="line">                 type: 1,</div><div class="line">                 title: &quot;详细信息&quot;,</div><div class="line">                 area: [&apos;600px&apos;, &apos;400px&apos;], //宽高</div><div class="line">                 content: detailTempl,</div><div class="line">                 success: function () &#123;</div><div class="line">                 &#125;,</div><div class="line">                 btn: [&quot;确定&quot;],</div><div class="line">                 yes: function () &#123;</div><div class="line">                     layer.close(index);</div><div class="line">                 &#125;</div><div class="line">             &#125;);</div><div class="line">        &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>关于数据绑定更多的语法请参考 <a href="https://aui.github.io/art-template/" target="_blank" rel="external">art-template</a></p>
+</blockquote>
+<h4 id="2017年6月26日-更新"><a href="#2017年6月26日-更新" class="headerlink" title="2017年6月26日 更新"></a>2017年6月26日 更新</h4><ul>
+<li>表格添加自定义搜索字段</li>
+</ul>
+<p>框架默认根据开发者配置的 seniorSearch 进行动态生成,默认只支持text 类型的input. 配置如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">seniorSearch: &#123; // 高级搜索配置</div><div class="line">                formList: [&#123;</div><div class="line">                    filed: &quot;部门名称&quot;,</div><div class="line">                    name: &quot;dept&quot;</div><div class="line">                &#125;, &#123;</div><div class="line">                    filed: &quot;部门编号&quot;,</div><div class="line">                    name: &quot;code&quot;</div><div class="line">                &#125;]</div><div class="line">            &#125;</div></pre></td></tr></table></figure>
+<p>如果开发者想要添加更加丰富的类型的input ,比如 时间选择,复选框,就得由开发者传入自定义表单的html,使用方式如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;!--先创建自定义html的模板--&gt;</div><div class="line">&lt;scrpit id=&quot;customSearchTemp&quot; type=&quot;text/html&quot;&gt;</div><div class="line">    &lt;div class=&quot;form-group&quot;&gt;</div><div class="line">        &lt;!--左边标题占比为 3 --&gt;</div><div class="line">        &lt;label class=&quot;col-xs-3 control-label&quot; &gt;</div><div class="line">        时间选择:</div><div class="line">        &lt;/label&gt;</div><div class="line">        &lt;!--右边内容占比 9--&gt;</div><div class="line">        &lt;div class=&quot;col-xs-9&quot;&gt;</div><div class="line">            &lt;!--以下就是自定义内容 提交服务器查询的时候,框架会根据input 的name属性获取值并传回服务器--&gt;</div><div class="line">            &lt;div class=&quot;input-group input-daterange&quot; data-date-format=&quot;mm/dd/yyyy&quot;&gt;</div><div class="line">                &lt;input type=&quot;text&quot; id=&quot;bgDaterange&quot; name=&quot;bgDaterange&quot; class=&quot;form-control text-center&quot; placeholder=&quot;开始日期&quot;&gt;</div><div class="line">                &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;</div><div class="line">                &lt;input type=&quot;text&quot; id=&quot;endDaterange&quot; name=&quot;endDaterange&quot; class=&quot;form-control text-center&quot; placeholder=&quot;结束日期&quot;&gt;</div><div class="line">            &lt;/div&gt;</div><div class="line">        &lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/scrpit&gt;</div></pre></td></tr></table></figure>
+<p>创建完高级搜索的自定义的html之后,在表格的option 中修改 seniorSearch , 添加 plusFiled 字段 如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">seniorSearch: &#123; // 高级搜索配置</div><div class="line">                formList: [&#123;</div><div class="line">                    filed: &quot;部门名称：&quot;,</div><div class="line">                    name: &quot;dept&quot;</div><div class="line">                &#125;, &#123;</div><div class="line">                    filed: &quot;部门编号：&quot;,</div><div class="line">                    name: &quot;code&quot;</div><div class="line">                &#125;],</div><div class="line">                plusFiled: template(&apos;customSearchTemp&apos;,&#123;&#125;)  // customSearchTemp 为你自定义高级搜索的模板的Id</div><div class="line">            &#125;</div></pre></td></tr></table></figure>
+<p>添加完后,如果你是使用datapicker,或者需要初始化的插件,别忘了在表格option中添加 onInit 的方法对插件进行初始化,该方法为表格初始化成功的回调 如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">var option = &#123;</div><div class="line">    ...</div><div class="line">     onInit: function () &#123;</div><div class="line">                // 日期选择</div><div class="line">                $(&apos;.input-datepicker, .input-daterange&apos;).datepicker(&#123;</div><div class="line">                    weekStart: 1,</div><div class="line">                    language: &quot;zh-CN&quot;</div><div class="line">                &#125;);</div><div class="line">            &#125;</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="2017年6月27日更新"><a href="#2017年6月27日更新" class="headerlink" title="2017年6月27日更新"></a>2017年6月27日更新</h4><ul>
+<li>添加表格工具栏自定义按钮</li>
+</ul>
+<p>添加配置如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">//表格的属性对象，用于初始化表格的设置</div><div class="line">      var option = &#123;</div><div class="line">              ...</div><div class="line">              // 这是个数组,可以添加多个btn</div><div class="line">              plusBtn:[&#123;</div><div class="line">                  id:&quot;testBtn&quot;,  // 按钮的id</div><div class="line">                  text:&quot;测试&quot;, // 显示的文字</div><div class="line">                  clazz:&quot;btn btn-default&quot;,// 按钮的class</div><div class="line">                  iconClass:&quot;fa fa-grav&quot; // 按钮的icon (使用的是 fontawesome    参考http://fontawesome.io/icons/)</div><div class="line">              &#125;],</div><div class="line">              ...</div><div class="line">              onInit:function()&#123; // 表格初始化成功的回调,在这这里可以对自定义的东西进行一些初始化配置</div><div class="line">                  ...</div><div class="line">                  // 在表格初始化成功后,再给按钮添加事件</div><div class="line">                   $(&quot;#testBtn&quot;).on(&quot;click&quot;,function () &#123;</div><div class="line">                          alert(1);</div><div class="line">                  &#125;);</div><div class="line">                  </div><div class="line">              &#125;</div><div class="line">          &#125;</div></pre></td></tr></table></figure>
+<h4 id="2017年6月28日更新"><a href="#2017年6月28日更新" class="headerlink" title="2017年6月28日更新"></a>2017年6月28日更新</h4><ul>
+<li>表格添加打印功能,用户可以选择打印列进行打印.</li>
+</ul>
+<ul>
+<li>art-template 添加事件转换辅助功能</li>
+</ul>
+<p>使用art-template 时,如果遇到需要时间毫秒数转时间日期格式 则使用如下方法即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!--myTime 为你需要转换的字段--&gt;</div><div class="line">&lt;div&gt; &#123;&#123;myTime | dateFormat &apos;yyyy-MM-dd&apos;&#125;&#125; &lt;/div&gt;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/01/SE框架说明/" data-id="cj4ldhyt80000ksnv19jo9uqr" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/01/hello-world/" class="article-date">
+  <time datetime="2017-07-01T14:10:14.195Z" itemprop="datePublished">2017-07-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/01/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/01/hello-world/" data-id="cj4ldhytj0001ksnvdl2by3b4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/01/SE框架说明/">SE框架说明</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/01/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
